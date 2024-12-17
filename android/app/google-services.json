@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208884565537",
+    "project_id": "crushsapp",
+    "storage_bucket": "crushsapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208884565537:android:41d88552df8466003c0560",
+        "android_client_info": {
+          "package_name": "com.crushtech.crush"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe3kxKO25QE1Kud05jhjdJgJpRbhdNCrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
