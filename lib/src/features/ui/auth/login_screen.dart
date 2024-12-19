@@ -7,6 +7,7 @@ import 'package:crush_app/src/core/theme/dimens.dart';
 import 'package:crush_app/src/datasource/models/user/user_model.dart';
 import 'package:crush_app/src/datasource/storage/local_storage.dart';
 import 'package:crush_app/src/features/logic/providers/auth_provider.dart';
+import 'package:crush_app/src/features/ui/video_chat/video_call_test_screen.dart';
 import 'package:crush_app/src/shared/components/atoms/dividers/labeled_divider.dart';
 import 'package:crush_app/src/shared/components/buttons/button.dart';
 import 'package:crush_app/src/shared/components/dialogs/dialog_builder.dart';
@@ -191,7 +192,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 50,
                   title: I18n.of(context).signup_title,
                   onPressed: () {
-                    _onSignup();
+                    // _onSignup();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:(context)=>VideoCallTestScreen(callId:_passwordController.text)
+                      )
+                    );
+
                   },
                 ),
                 const Gap.vertical(height: Dimens.spacing),

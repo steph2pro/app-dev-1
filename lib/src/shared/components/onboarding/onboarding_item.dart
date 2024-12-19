@@ -26,18 +26,18 @@ class OnboardingItem extends StatelessWidget {
     return 
     Center(
       child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          // mainAxisAlignment: MainAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // const Spacer(),
-            // Expanded(
-            //   child: 
+            Expanded(
+              child: 
               Image.asset(
                 imageUrl,
                 width: double.infinity,
                 height:400,
               ),
-            // ),
+            ),
             gapH30,
              Column(
                 children: [

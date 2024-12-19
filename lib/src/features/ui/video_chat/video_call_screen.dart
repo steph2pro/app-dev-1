@@ -217,6 +217,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
   @override
   void initState() {
     // requestPermissionsIfNeeded();
+    requestPermissionsIfNeeded(); 
     startListenEvent();
     loginRoom();
     super.initState();

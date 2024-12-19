@@ -8,7 +8,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:zego_uikit_prebuilt_call/zego_uikit_prebuilt_call.dart';
 import 'package:zego_uikit_signaling_plugin/zego_uikit_signaling_plugin.dart';
 
-class ZimVideoCallScreen extends StatefulWidget {
+class ZimVideoCallScreen  extends StatefulWidget {
   final String targetUserID;
   final String targetUserName;
   const ZimVideoCallScreen(
@@ -47,8 +47,7 @@ class _ZimVideoCallScreenState extends State<ZimVideoCallScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      var user =
-          await LocalStorage().getObject<UserModel>('user', UserModel.fromJson);
+      var user = await LocalStorage().getObject<UserModel>('user', UserModel.fromJson);
 
       if (user != null && user.accessToken != null) {
         setState(() {
